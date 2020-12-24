@@ -4,7 +4,7 @@ import NomineeCard from "./NomineeCard"
 class Nominees extends React.Component{
 
     state={
-        // nominees: {}
+        nominees: []
     }
 
     componentDidMount(){
@@ -12,11 +12,12 @@ class Nominees extends React.Component{
         update state */
     }
 
-    // from the updated state, create a Nominee Card for each
+    renderNominees = this.state.nominees.map((nominee, index) => <NomineeCard key={index} nominee={nominee} /> )
 
     render(){
         return (
             <>
+                {this.renderNominees}
             </>
         )
     }
