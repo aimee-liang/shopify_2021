@@ -6,14 +6,15 @@ import Nominees from "./Components/Nominees"
 
 const App = props => {
   return(
+
     <>
-    
     <Navbar />
-    
+
     <Switch>
       <Route path ="/home" render={() => <Home/> } />
       <Route path ="/nominees" render={()=> <Nominees/>} />
     </Switch>
+    
     </>
   )
 }

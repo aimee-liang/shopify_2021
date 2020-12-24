@@ -8,7 +8,7 @@ class Nominees extends React.Component{
     }
 
     componentDidMount(){
-        /* fetch all nominees that have been posted on the backend,
+        /* fetch all nominees that have been posted on the backend, then
         update state */
     }
 

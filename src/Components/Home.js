@@ -3,6 +3,10 @@ import SearchBar from "./SearchBar"
 
 class Home extends React.Component {
 
+    state={
+        movies: []
+    }
+    
     componentDidMount(){
         // fetch()
             // .then()
